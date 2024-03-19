@@ -43,7 +43,7 @@ function CommentArea(props) {
   //   }
   // }
 
-  componentDidUpdate = async (prevProps) => {
+  const componentDidUpdate = async (prevProps) => {
     if (prevProps.asin !== this.props.asin) {
       this.setState({
         isLoading: true,
